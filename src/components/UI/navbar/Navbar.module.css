@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 1536px;
+    margin: 0 auto;
+    margin-bottom: 174px;
+}
+
+.burger {
+    border: none;
+    text-align: right;
+}
+
+hr {
+    border:0;
+    border-top:1px solid #292929;
+    height:1px
+}
+
+span {
+    color: #4336BE;
+}
+
+h2 {
+    color: #292929;
+}
+
+h2,span {
+    font-size: 30px;
+}
