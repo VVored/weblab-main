@@ -1,0 +1,10 @@
+.ul {
+    list-style-type: none;
+}
+
+.about {
+    margin-left: 45px;
+    font-size: 16px;
+    color: #292929;
+    min-width: max-content;
+}

@@ -8,7 +8,6 @@
 .container {
     width: 1536px;
     margin: 0 auto;
-    display: flex;
 }
 
 .socialNetwork {
@@ -24,6 +23,7 @@ h1 {
     color: #292929;
     font-weight: 700;
     margin-bottom: 55px;
+    line-height: 78px;
 }
 
 p {
@@ -37,4 +37,13 @@ p {
 
 a {
     text-decoration: none;
+}
+
+@keyframes extension {
+    from {
+        transform: translateX(-150%)
+    }
+    to {
+        transform: translateX(0);
+    }
 }
