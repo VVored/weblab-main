@@ -13,7 +13,11 @@ function App() {
             setMenu
         }}>
             <div className="App">
-                <Menu/>
+                <Navbar/>
+                {menu
+                    ? <Menu style={{animation: 'extension 1s'}}/>
+                    : <WelcomePage style={{animation: 'extension 0.5s', display: 'flex'}}/>
+                }
             </div>
         </MenuContext.Provider>
     );

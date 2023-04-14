@@ -6,5 +6,13 @@
     margin-left: 45px;
     font-size: 16px;
     color: #292929;
-    min-width: max-content;
+}
+
+.links * + * {
+    margin-left: 10px;
+}
+
+.links {
+    margin-left: 45px;
+    margin-top: 40px;
 }

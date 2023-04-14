@@ -3,18 +3,45 @@
     justify-content: space-between;
     width: 1536px;
     margin: 0 auto;
-    margin-bottom: 134px;
+    margin-bottom: 54px;
+}
+
+.close {
+    width: 32px;
+    height: 1px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.close::after, .close::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 1px;
+    border-radius: 1px;
+    margin-top: 22px;
+    background-color: #292929;
+}
+
+.close::after {
+    transform: rotate(45deg);
+}
+
+.close::before {
+    transform: rotate(315deg);
 }
 
 .burger {
     border: none;
-    
+    cursor: pointer;
+    background-color: transparent;
 }
 
 hr {
-    border:0;
-    border-top:1px solid #292929;
-    height:1px
+    border: 0;
+    border-top: 1px solid #292929;
+    height: 1px
 }
 
 span {
@@ -25,6 +52,7 @@ h2 {
     color: #292929;
 }
 
-h2,span {
+h2,
+span {
     font-size: 30px;
 }
