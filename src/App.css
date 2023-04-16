@@ -11,7 +11,7 @@
 }
 
 .socialNetwork {
-    margin-top: 240px;
+    margin-top: 294px;
 }
 
 .socialNetwork>a {
@@ -21,9 +21,13 @@
 h1 {
     font-size: 64px;
     color: #292929;
-    font-weight: 700;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
     line-height: 78px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #292929;
 }
 
 p {
@@ -37,6 +41,28 @@ p {
 
 a {
     text-decoration: none;
+}
+
+.arrow::after, .arrow::before {
+    position: absolute;
+    width: 5px;
+    height: 0px;
+    display: block;
+    content: '';
+    border: 1px solid #4336be;
+    background-color: #4336be;
+    left: -4px;
+    
+}
+
+.arrow::after {
+    transform: rotate(45deg);
+    top: 1px;
+}
+
+.arrow::before {
+    transform: rotate(-45deg);
+    bottom:1px;
 }
 
 @keyframes extension {

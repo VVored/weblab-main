@@ -7,14 +7,12 @@ function Navbar() {
   const { menu, setMenu } = useContext(MenuContext);
   const openOrCloseMenu = () => {
     setMenu(!menu);
-    console.log(menu);
   }
   return (
     <header className={cls.header}>
       <h2><span>Web</span>lab</h2>
       {menu
         ? <div onClick={openOrCloseMenu} className={cls.close}>
-
           </div>
         : <button onClick={openOrCloseMenu} className={cls.burger}>
           <hr width='32' />
@@ -22,7 +20,6 @@ function Navbar() {
           <hr width='32' />
           </button>
       }
-
     </header>
   )
 }

@@ -1,0 +1,29 @@
+.footer {
+    height: min-content;
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p2, .p1 {
+    font-size: 16px;
+    color: #292929;
+}
+
+.p2 {
+    text-align: right;
+}
+
+.adress {
+    margin-right: 40px;
+}
+
+.links * + * {
+    margin-left: 10px;
+}
+
+.links {
+    margin-top: 71px;
+}

@@ -13,7 +13,8 @@
     cursor: pointer;
 }
 
-.close::after, .close::before {
+.close::after,
+.close::before {
     content: '';
     position: absolute;
     display: block;
@@ -55,4 +56,14 @@ h2 {
 h2,
 span {
     font-size: 30px;
+}
+
+@keyframes closeButton {
+    from {
+
+    }
+    to 
+    {
+        
+    }
 }
