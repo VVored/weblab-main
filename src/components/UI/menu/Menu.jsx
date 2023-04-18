@@ -1,14 +1,15 @@
 import React from 'react'
 import cls from './Menu.module.css'
+import {Link} from 'react-router-dom'
 
 export default function Menu({style}) {
     return (
         <div className='container' style={style}>
             <ul className={cls.ul}>
-                <li><a><h1>О нас</h1></a></li>
-                <li><a><h1>Портфолио</h1></a></li>
-                <li><a><h1>Услуги</h1></a></li>
-                <li><a><h1>Контакты</h1></a></li>
+                <li><Link to="/about"><h1>О нас</h1></Link></li>
+                <li><Link><h1>Портфолио</h1></Link></li>
+                <li><Link><h1>Услуги</h1></Link></li>
+                <li><Link><h1>Контакты</h1></Link></li>
             </ul>
             <p className={cls.about}>454112, Челябинск,</p>
             <p className={cls.about} style={{ marginBottom: 40 }}>ул. Комсомольский проспект, 33Д, оф. 16</p>
