@@ -1,12 +1,19 @@
 import React from 'react';
 import Navbar from '../components/UI/navbar/Navbar';
-
+import Menu from '../components/UI/menu/Menu';
+import { useContext } from 'react';
+import { MenuContext } from '../context';
+import { useEffect } from 'react';
 
 export default function About() {
+    const { setIsOpenMenu } = useContext(MenuContext);
+    useEffect(() => { setIsOpenMenu(false); }, [])
+
     return (
         <div className='container'>
+            <Menu />
             <Navbar />
-            <div style={{animation: 'extension 1s'}}>
+            <div style={{ animation: 'extension 1s' }}>
                 <h1>О нас</h1>
                 <p>Тупа нереальные ребята и еще текст, просто потому что заставили (((</p>
                 <p style={{ maxWidth: 1100 }}>С 2017 года создаем интерфейсы, веб-сайты, мобильные приложения для крупных правительственных организаций и коммерческих предприятий</p>
@@ -28,6 +35,7 @@ export default function About() {
                     </li>
                 </ul>
             </div>
+
         </div>
     )
 }

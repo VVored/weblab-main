@@ -9,7 +9,7 @@
 .close {
     width: 32px;
     height: 1px;
-    margin-top: 22px;
+    margin-top: 15px;
     cursor: pointer;
 }
 
@@ -34,9 +34,11 @@
 }
 
 .burger {
+    margin-top: 15px;
     border: none;
     cursor: pointer;
     background-color: transparent;
+    z-index: 30;
 }
 
 hr {

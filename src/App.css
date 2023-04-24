@@ -43,7 +43,8 @@ a {
     text-decoration: none;
 }
 
-.arrow::after, .arrow::before {
+.arrow::after,
+.arrow::before {
     position: absolute;
     width: 5px;
     height: 0px;
@@ -52,7 +53,7 @@ a {
     border: 1px solid #4336be;
     background-color: #4336be;
     left: -4px;
-    
+
 }
 
 .arrow::after {
@@ -60,9 +61,16 @@ a {
     top: 1px;
 }
 
+.blur {
+    width: 70vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 30;
+}
+
 .arrow::before {
     transform: rotate(-45deg);
-    bottom:1px;
+    bottom: 1px;
 }
 
 @keyframes extension {
@@ -70,8 +78,28 @@ a {
         transform: translateX(-10%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+.menu {
+    position: fixed;
+    width: 30vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    right: 0px;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.menu.active {
+    transform: translateX(0%);
+}
+
+font {
+    color: white;
 }

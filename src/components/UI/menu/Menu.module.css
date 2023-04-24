@@ -2,13 +2,17 @@
     list-style-type: none;
 }
 
+.li {
+    color: white;
+}
+
 .about {
     margin-left: 45px;
     font-size: 16px;
-    color: #292929;
+    color: #fff;
 }
 
-.links * + * {
+.links *+* {
     margin-left: 10px;
 }
 

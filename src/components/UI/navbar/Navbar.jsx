@@ -1,24 +1,24 @@
 import React from 'react';
-import { useState } from 'react';
 import cls from './Navbar.module.css';
-import WelcomePage from '../../../pages/WelcomePage';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { MenuContext } from '../../../context';
+import { useEffect } from 'react';
 
 function Navbar() {
-  const [menu, setMenu] = useState(false);
-  const aboutPage = () => {
-    setMenu(!menu);
+  const { isOpenMenu, setIsOpenMenu} = useContext(MenuContext);
+  const OpenMenu = () => {
+    setIsOpenMenu(!isOpenMenu);
+    console.log(isOpenMenu);
   }
   return (
     <header className={cls.header}>
       <Link to="/main"><h2><span>Web</span>lab</h2></Link>
-      {/* <Link onClick={aboutPage} to="/about" className={cls.close}></Link> */}
-      <Link onClick={aboutPage} to="/menu" className={cls.burger}>
+      <button onClick={OpenMenu} className={cls.burger}>
         <hr width='32' />
         <hr width='24' />
         <hr width='32' />
-      </Link>
-
+      </button>
     </header>
   )
 }
