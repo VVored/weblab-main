@@ -4,6 +4,7 @@ import Menu from '../components/UI/menu/Menu';
 import { useContext } from 'react';
 import { MenuContext } from '../context';
 import { useEffect } from 'react';
+import AboutListItem from '../components/UI/aboutList/AboutListItem';
 
 export default function About() {
     const { setIsOpenMenu } = useContext(MenuContext);
@@ -18,21 +19,11 @@ export default function About() {
                 <p>Тупа нереальные ребята и еще текст, просто потому что заставили (((</p>
                 <p style={{ maxWidth: 1100 }}>С 2017 года создаем интерфейсы, веб-сайты, мобильные приложения для крупных правительственных организаций и коммерческих предприятий</p>
                 <h2 style={{ marginTop: 80, marginBottom: 50 }}>Какие-то цифры нашей Компании</h2>
-                <ul style={{ listStyleType: 'none', color: '#4336be', display: 'flex', justifyContent: 'center' }}>
-                    <li style={{ display: 'flex', width: 300 }}>
-                        <div>
-                            <h1 style={{ color: '#4336be' }}>8</h1>
-                            <p style={{ color: '#4336be', fontWeight: 700, marginTop: -30 }}>Лет</p>
-                        </div>
-                        <p style={{ color: '#4336be', marginTop: 75, marginLeft: 40 }}>Средний опыт сотрудников</p>
-                    </li>
-                    <li style={{ display: 'flex', width: 300 }}>
-                        <div>
-                            <h1 style={{ color: '#4336be' }}>21</h1>
-                            <p style={{ color: '#4336be', fontWeight: 700, marginTop: -30 }}>День</p>
-                        </div>
-                        <p style={{ color: '#4336be', marginLeft: 40, marginTop: 55 }}>Средний срок разработки проектов</p>
-                    </li>
+                <ul className='aboutUl'>
+                    <AboutListItem number={8} h="Лет" desk="Средний опыт сотрудников"/>
+                    <AboutListItem number={21} h="день" desk="Средний срок разработки проектов"/>
+                    <AboutListItem number=">20" h="" desk="Средний опыт сотрудников"/>
+                    <AboutListItem number={1650} h="" desk="Идей у нашего дизайнера"/>
                 </ul>
             </div>
 
