@@ -15,9 +15,9 @@ function Navbar() {
     <header className={cls.header}>
       <Link to="/main"><h2><span>Web</span>lab</h2></Link>
       <button onClick={OpenMenu} className={cls.burger}>
-        <hr width='32' />
-        <hr width='24' />
-        <hr width='32' />
+        <hr className='burgerLine' width='32' />
+        <hr className='burgerLine' width='24' />
+        <hr className='burgerLine' width='32' />
       </button>
     </header>
   )

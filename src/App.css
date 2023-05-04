@@ -30,9 +30,62 @@ h2 {
     color: #292929;
 }
 
+.princips {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.page {
+    animation: extension 1s;
+}
+
+.aboutPrincCard {
+    width: 600px;
+    height: 310px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-right: 140px;
+    margin-bottom: 60px;
+}
+
+.dotes::after {
+    content: '................................................................................................................\0a................................................................................................................\0a................................................................................................................\0a................................................................................................................\0a................................................................................................................\0a................................................................................................................\0a................................................................................................................\0a................................................................................................................\0a................................................................................................................\0a................................................................................................................\0a................................................................................................................\0a................................................................................................................\0a.........................';
+    z-index: -1;
+    white-space: pre;
+    position: absolute;
+    display: inline-block;
+    left: 1265px;
+    top: 950px;
+    right: 350px;
+    width: 463px;
+    height: 320px;
+    color: #4336be;
+    line-height: 10px;
+    font-size: large;
+}
+
+.aboutPrincCardHolder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 110px auto 0px auto;
+}
+
+.burgerLine {
+    border: none;
+    background-color: #4336be;
+    color: #4336be;
+    height: 1px;
+}
+
 p {
     font-size: 24px;
     color: #a0a0a0;
+    line-height: 29px;
 }
 
 .project {
@@ -41,6 +94,47 @@ p {
 
 a {
     text-decoration: none;
+    color: #292929;
+    font-size: 16px;
+}
+
+.arrow {
+    border: 1px solid #4336be;
+    transform: rotate(180deg);
+    width: 100px;
+    height: 0px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.arrowBlack {
+    border: 1px solid #292929;
+    transform: rotate(180deg);
+    width: 100px;
+    height: 0px;
+    margin-left: 50px;
+}
+
+.arrowBlack::after,
+.arrowBlack::before {
+    position: absolute;
+    width: 5px;
+    height: 0px;
+    display: block;
+    content: '';
+    border: 1px solid #292929;
+    background-color: #292929;
+    left: -4px;
+}
+
+.arrowBlack::after {
+    transform: rotate(45deg);
+    top: 1px;
+}
+
+.arrowBlack::before {
+    transform: rotate(-45deg);
+    bottom: 1px;
 }
 
 .arrow::after,
@@ -53,7 +147,6 @@ a {
     border: 1px solid #4336be;
     background-color: #4336be;
     left: -4px;
-
 }
 
 .arrow::after {
@@ -101,7 +194,7 @@ a {
 }
 
 font {
-    color: white;
+    color: #292929;
 }
 
 .aboutUl {
@@ -110,4 +203,15 @@ font {
     display: flex;
     justify-content: space-evenly;
     align-items: left;
+}
+
+.image_wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.portElement {
+    display: flex;
+    align-items: center;
 }

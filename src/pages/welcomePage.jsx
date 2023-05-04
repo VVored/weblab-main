@@ -19,7 +19,7 @@ export default function WelcomePage() {
                     <p>Cоздаем интерфейсы аналитических систем, мобильные приложения и digital-сервисы для государства и бизнеса</p>
                     <div style={{ display: 'flex' }}>
                         <a href="*"><p className="project">Обсудить ваш проект</p></a>
-                        <div className="arrow" style={{ border: '1px solid #4336be', transform: 'rotate(180deg)', width: 100, height: 0, marginTop: 40, marginLeft: 100 }}></div>
+                        <div className="arrow"></div>
                     </div>
                     <div className="socialNetwork">
                         <font style={{color: 'black'}}>Наши соц.сети</font>
