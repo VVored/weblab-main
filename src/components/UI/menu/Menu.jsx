@@ -7,11 +7,11 @@ import { MenuContext } from '../../../context'
 export default function Menu() {
     const { isOpenMenu, setIsOpenMenu } = useContext(MenuContext);
     return (
-        <div style={{display: 'block'}}>
-            <div className={isOpenMenu ? 'blur' : ''} onClick={()=>setIsOpenMenu(false)}/>
+        <div style={{ display: 'block' }}>
+            <div className={isOpenMenu ? 'blur' : ''} onClick={() => setIsOpenMenu(false)} />
             <div className={isOpenMenu ? 'menu active' : 'menu'} onClick={(e) => { e.stopPropagation() }}>
                 <ul className={cls.ul}>
-                    <li ><Link to="/about"><h1 className={cls.li}>О нас</h1></Link></li>
+                    <li><Link to="/about"><h1 className={cls.li}>О нас</h1></Link></li>
                     <li><Link to="/portfolio"><h1 className={cls.li}>Портфолио</h1></Link></li>
                     <li><Link><h1 className={cls.li}>Услуги</h1></Link></li>
                     <li><Link><h1 className={cls.li}>Контакты</h1></Link></li>
@@ -28,7 +28,6 @@ export default function Menu() {
                     <a href="*" style={{ color: '#fff' }}>Behance</a>
                 </div>
             </div>
-            
         </div>
     )
 }

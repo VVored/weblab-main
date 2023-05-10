@@ -15,21 +15,37 @@ export default function Portfolio() {
             <Navbar />
             <div className='page'>
                 <h1>Наши работы</h1>
-                <p style={{marginBottom: 100}}>Все проекты показать невозможно, поэтому здесь представлены наши свежие работы.</p>
+                <p style={{ marginBottom: 100 }}>Все проекты показать невозможно, поэтому здесь представлены наши свежие работы.</p>
                 <div className="portElement">
                     <div className="portElementTxt">
-                        <h2>Разработка сайта ресторана <span style={{color: '#1C5947'}}>"Sicilia"</span></h2>
+                        <h2>Разработка сайта ресторана <span style={{ color: '#1C5947' }}>«Sicilia»</span></h2>
                         <p>
                             Ресторан нетривиальной средиземноморской кухни, завоевавший любовь гостей еще в начале нулевых, в марте 2018 года ресторан получил новый интерьер и концепцию.
                         </p>
                         <p>Разработка современного и адаптивного под мобильные устройства сайта на основе фирменного стиля ресторана. Возможность оплаты блюд онлайн.</p>
-                        <div style={{display: 'flex', marginTop: 60, alignItems: 'center'}}>
+                        <div style={{ display: 'flex', marginTop: 60, alignItems: 'center' }}>
                             <a href="/">Посмотреть кейс</a>
                             <div className="arrowBlack"></div>
                         </div>
                     </div>
                     <div className="portElementImgs">
                         <img className='portImgAsabi' src={macbookAsabi} alt="" />
+                    </div>
+                </div>
+                <div className="portElement">
+                    <div className="portElementImgs">
+                        <img className='portImgAsabi' src={macbookAsabi} alt="" />
+                    </div>
+                    <div className="portElementTxt">
+                        <h2>Разработка сайта ресторана  <span style={{ color: '#F6343B' }}>«Asabi»</span></h2>
+                        <p>
+                            Ресторан нетривиальной средиземноморской кухни, завоевавший любовь гостей еще в начале нулевых, в марте 2018 года ресторан получил новый интерьер и концепцию.
+                        </p>
+                        <p>Разработка современного и адаптивного под мобильные устройства сайта на основе фирменного стиля ресторана. Возможность оплаты блюд онлайн.</p>
+                        <div style={{ display: 'flex', marginTop: 60, alignItems: 'center' }}>
+                            <a href="/">Посмотреть кейс</a>
+                            <div className="arrowBlack"></div>
+                        </div>
                     </div>
                 </div>
             </div>
